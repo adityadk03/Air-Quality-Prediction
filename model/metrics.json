@@ -1,0 +1,42 @@
+{
+  "model_name": "Linear Regression",
+  "target": "CO(GT)",
+  "features": [
+    "PT08.S1(CO)",
+    "C6H6(GT)",
+    "PT08.S2(NMHC)",
+    "NOx(GT)",
+    "PT08.S3(NOx)",
+    "NO2(GT)",
+    "PT08.S4(NO2)",
+    "PT08.S5(O3)",
+    "T",
+    "RH",
+    "AH"
+  ],
+  "train_samples": 6139,
+  "test_samples": 1535,
+  "r2_train": 0.8866,
+  "r2_test": 0.8888,
+  "mae_test": 0.308,
+  "rmse_test": 0.4813,
+  "coefficients": {
+    "PT08.S1(CO)": 0.2627,
+    "C6H6(GT)": 0.5639,
+    "PT08.S2(NMHC)": -0.0247,
+    "NOx(GT)": 0.5545,
+    "PT08.S3(NOx)": 0.0171,
+    "NO2(GT)": 0.1116,
+    "PT08.S4(NO2)": 0.4528,
+    "PT08.S5(O3)": -0.2153,
+    "T": -0.2237,
+    "RH": -0.1396,
+    "AH": -0.0484
+  },
+  "intercept": 2.1663,
+  "rf_comparison": {
+    "r2_test": 0.9239,
+    "mae_test": 0.2516,
+    "rmse_test": 0.3982
+  }
+}
